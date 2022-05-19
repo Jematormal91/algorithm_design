@@ -105,7 +105,7 @@ while (opcionusuario != 9):
     elif opcionusuario != 9:
         print("\nEntra un numero entre 1 y 7.")
  
-# ---> QUESTION 6 <---
+## ---> QUESTION 6 <---
 
 food_charge = input("Enter the charge for the food: ")
 
@@ -120,3 +120,40 @@ sales_tax = 0.08 * food_charge
 total_owed = food_charge + tip + sales_tax
 
 print("The tip owed is $"+str(format(tip,",.2f"))+".\n"+"The sales tax owed is $"+str(format(sales_tax,",.2f"))+".\n"+"The total amount owed is $"+str(format(total_owed,",.2f"))+".")
+
+## --> QUESTION 7 <--
+number = input ("enter a number between 1 and 100: ")
+
+try:
+    number = int(number)
+    if number < 1 or number > 100: 
+        print("error invalid number")
+
+    elif number % 2 == 0:
+        print("number is even")
+
+    elif number % 2 != 0:
+        print("number is odd")
+
+except ValueError:
+    print("error enter a number")
+    
+## --> QUESTION 8 <--
+
+first_color, second_color = input("enter the names of two primary colors to mix: ").split()
+
+if first_color == second_color:
+    print("enter two different primary colors")
+
+elif first_color == "red" or second_color == "red":
+    if first_color == "blue" or second_color == "blue":
+        print("you get purple")
+    elif first_color == "yellow" or second_color == "yellow":
+        print("you get orange")
+
+elif first_color == "blue" or second_color == "blue":
+    if first_color == "yellow" or second_color == "yellow":
+        print("you get green")
+
+else:
+    print("invalid color entry")
