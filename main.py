@@ -504,5 +504,131 @@ for i in range (1,4):
     print ("-" * len(row_names))
     print(" " + str(scores[i][0]) + " " + " | " + " " + str(scores[i][1]) + " " + " | " + str(scores[i][2]))
 print ("-" * len(row_names))
+
+#  --> QUESTION 28 <--
+# A grocery store has a reward system that gives customers redeemable points based on the amount spent on groceries. 
+# The points are awarded as follows:
+# If a customer spends <= $50, they are awarded 1 point for each dollar spent.
+# If a customer spends > $50 and < $150, they are awarded 2 points for each dollar spent
+# If a customer spends >= $150, they are awarded 3 points for each dollar spent.
+# You can assume all grocery items are priced to the dollar with tax included (no cents). 
+
+# Write a program that asks a customer to enter the total dollar amount spent for the trip, 
+# then displays the number of points awarded.
+
+total_spent = int(input("Enter the total dollar amount spent for the trip: "))
+if total_spent <= 50:
+    points = 1
+    total_spent *= points
+
+elif total_spent > 50 and total_spent < 150:
+    points = 2
+    total_spent *= points
+
+elif total_spent >= 150:
+    points = 3
+    total_spent *= points
+
+print("The number of points awarded are:",total_spent)
+
+
+# --> QUESTION 29 <-- 
+
+# define an input that accepts an age (number)
+age = int(input("Enter an age (number): "))
+
+# check if age is at most 1
+if age <= 1:
+    print("infant")
+
+# check if age older than 1 but at most 13
+elif age > 1 and age <= 13:
+    print("child")    
+
+# check if age is older than 13 but at most 20
+elif age > 13 and age <= 20:
+    print("teenager")
+
+# otherwise print "adult"
+else:
+    print("adult")
+
+
+# --> QUESTION 30 <--
+
+# Write a while loop that lets a user enter a number less than 10. 
+# If the number inputted exceeds 10, print an error and ask for the number again, 
+# in which a user may enter the same or a different number. 
+# The number should be incremented by 5, and the result assigned to a variable named sum. 
+# The loop should continue to iterate as long as the sum is less than 50. When sum exceeds 30, 
+# it should print "Almost there..." until it reaches or exceeds 50. 
+# Once it does, print out "your final sum is {replace with final sum}". 
+
+# For example, if the sum is currently 45 and the user inputs 4, 
+# the program will not enter the loop again since the new sum will be 54 and should then print "your final sum is 45".
+
+sum = 0
+num = int(input("Enter number less than 10: "))
+
+while sum < 50:
+    
+    if num > 10:
+        print("Invalid. Number greater than 10.")
+        num = int(input("Enter number less than 10: "))
+
+    num += 5
+    sum += num
+
+    if sum > 30 and sum < 50:
+        print("Almost there...")
+
+print("your final sum is", sum)
+
+
+# --> QUESTION 31 <--
+# The flowchart shows a program's steps to troubleshooting a lamp issue. 
+# Turn the following diagram into a program where the program will first prompt the user with "What is wrong?". 
+# If the user enters "Lamp doesn't work", 
+# then the program should proceed to ask the questions depicted in the diagram and print out the responses accordingly. 
+
+# If any other issue is inputted initially by the user, ignore and repeat the same initial question until the correct issue is presented by the user.
+
+troubleshoot = input("What is wrong? ")
+
+while troubleshoot.lower() != "lamp doesn't work":
+    troubleshoot = input("What is wrong? ")
+
+if troubleshoot.lower() == "lamp doesn't work":
+    response = input("Lamp plugged in? ")  
+    if response.lower() == "no":
+        print("Plug in lamp")
+    elif response.lower() == "yes":
+        response = input("Bulb burned out? ")
+        if response.lower() == "yes":
+            print("Replace Bulb")
+        elif response.lower() == "no":
+            print("Get a new lamp")
+
+
+
+# # --> QUESTION 32 <--
+# Unfortunately, your landlord has announced that they will be increasing rent annually by 2% starting next year. 
+# Write a program that takes a user's current monthly rent amount (integer) and the number of years (integer), 
+# starting the following year, the user plans to stay at the apartment, 
+# and calculates how much they will spent total in that duration of stay. 
+# The program should print this amount back to the user.
+
+current_rent = int(input("What is your current monthly rent amount? "))
+years = int(input("How many years do you plan to stay at the apartment? "))
+rate_of_increase = 0.02
+total = 0
+
+for i in range(years): 
+    new_rent = (current_rent * rate_of_increase) + current_rent
+    current_rent = new_rent
+    total += current_rent
+
+format_total = "{:.2f}".format(total*12)  
+print("You will spend a total of $" + str(format_total) + " in " + str(years) + " years.")
    
 
