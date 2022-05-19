@@ -193,3 +193,27 @@ If the user enters *"Lamp doesn't work"*, then the program should proceed to ask
 *Unfortunately, your landlord has announced that they will be increasing rent annually by 2% starting next year.*</br>
 Write a program that takes a user's current monthly rent amount (integer) and the number of years (integer), starting the following year, the user plans to stay at the apartment, and calculates how much they will spent total in that duration of stay. </br>
 The program should print this amount back to the user.
+
+### QUESTION 33.
+Write a function piglatinize that accepts a sentence as an argument, uses that parameter value, and replaces words in the sentence that consist of at least 4 letters into their Pig Latin counterpart and then displays the converted sentence. </br>
+In this version, to convert a word to Pig Latin, you remove the first letter and place that letter at the end of the word. 
+Then, you append the string "ay" to the word. </br>
+*For example:*</br>
+*piglatinize('I want a doggy')*
+*// >>> I antway a oggyday*
+
+### QUESTION 34.
+Write a program that reads the contents of a text file. </br>
+Feel free to create your own with at least three lines of words. </br>
+The program should create a dictionary in which the key-value pairs are described as follows:</br>
+
+* The keys are the individual words in the file.</br>
+* The values are the line numbers in the file where the word (the key) is found.</br>
+
+*For example, suppose the word "hello" is found in lines 1, 2, 3, and 4.*</br>
+
+The dictionary would contain an element in which the key was the string "hello" and the value was a list of the line numbers [1,2,3,4].</br>
+
+Once the dictionary is built, the program, in an infinite while loop, should prompt the user for a word. </br>
+When the user enters the word, the program should display what line numbers the word can be found on. </br>
+If the word is not found in the dictionary, the program should display: *"{replace with user-inputted word} does not exist in the file"*.</br>
