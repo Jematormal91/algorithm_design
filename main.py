@@ -157,3 +157,49 @@ elif first_color == "blue" or second_color == "blue":
 
 else:
     print("invalid color entry")
+
+    
+## --> QUESTION 9 <--
+
+# Write a while loop that lets the user enter a number. 
+# The number should be multiplied by 10, 
+# and the result assigned to a variable named product. 
+# The loop should iterate as long as the product is less than 100.
+
+product = 0
+while (product < 100):
+    num = int(input("Enter a number: "))
+    product = num * 10
+
+## --> QUESTION 10 <--
+
+# Write a for loop that displays the following set of numbers:
+# 0, 10, 20, 30, 40, 50 . . . 100
+
+for i in range (11):
+    print(i*10)
+
+## --> QUESTION 11 <--
+
+# Write a loop that asks the user to enter a number. 
+# The loop should iterate 10 times and keep a running total of the numbers entered.
+
+sum = 0
+for i in range(10):
+    sum += int(input("Enter a number: "))
+    print("The sum is: ",sum)
+
+## --> QUESTION 12 <--
+
+# Write a program that prints numbers starting at 20 and ending at 0. 
+# For every odd number, print "Buzz" instead of the number, and for every even number, 
+# print "Fizz" instead of the number.
+
+count = 20
+while count >= 0:
+    if count % 2 == 0:
+        print("Fizz")
+        count -= 1
+    else:
+        print("Buzz")
+        count -= 1
