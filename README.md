@@ -50,4 +50,20 @@ Design a program that prompts the user to enter the names of two primary colors 
 If the user enters anything other than a primary color (red, blue, or yellow), the program should display an error message. 
 Otherwise, the program should display the name of the secondary color that results.
 
+### QUESTION 9.
+Write a while loop that lets the user enter a number. 
+The number should be multiplied by 10, and the result assigned to a variable named product. 
+The loop should iterate as long as the product is less than 100.
+
+### QUESTION 10.
+Write a for loop that displays the following set of numbers:</br>
+*0, 10, 20, 30, 40, 50 . . . 100*
+
+### QUESTION 11.
+Write a loop that asks the user to enter a number. 
+The loop should iterate 10 times and keep a running total of the numbers entered.
+
+### QUESTION 12.
+Write a program that prints numbers starting at 20 and ending at 0. 
+For every odd number, print "Buzz" instead of the number, and for every even number, print "Fizz" instead of the number.
 
