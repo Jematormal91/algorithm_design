@@ -30,3 +30,24 @@ Display each of these amounts and the total in the following format:</br>
 *The total amount owed is $___.*
 
 The output should be a multi-line string and ___ should be replaced by actual values in by your program output.
+
+### QUESTION 7.
+Write a program that prompts a user to enter a number between 1 and 100. 
+If a number outside of this boundary is entered or if a non-number is entered, reply with an error message. 
+Otherwise, determine whether the number if even or odd. 
+Subsequently, print out a statement describing whether the entered number if even or odd.
+
+
+### QUESTION 8.
+The colors red, blue, and yellow are known as the primary colors because they cannot be made by mixing other colors. 
+When you mix two primary colors, you get a secondary color, as shown here:
+
+*When you mix red and blue, you get purple.*</br>
+*When you mix red and yellow, you get orange.*</br>
+*When you mix blue and yellow, you get green.*</br>
+
+Design a program that prompts the user to enter the names of two primary colors to mix. 
+If the user enters anything other than a primary color (red, blue, or yellow), the program should display an error message. 
+Otherwise, the program should display the name of the secondary color that results.
+
+
