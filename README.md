@@ -154,10 +154,10 @@ The program should then use a loop to step through the list.
 The loop should pass each element to a function that displays the element whether it is a prime number.
 
 ### QUESTION 27.
-Given the following list and nested lists:
+Given the following list and nested lists:</br>
 *scores = [['Jack', 'Josh', 'Joe'],[90, 88, 56],[67, 88, 87],[88, 99, 78]]*</br>
 
-Write a program that turns this into an ASCII art table with the scores in their correct places. 
-*You may design the table however you like.*
-*The nested lists are the rows and the indexes of the nested lists are the columns.*
+Write a program that turns this into an ASCII art table with the scores in their correct places.</br>
+*You may design the table however you like.*</br>
+*The nested lists are the rows and the indexes of the nested lists are the columns.*</br>
 *In the end, you should have a table with 4 rows (first one being the student names) and 3 columns (one for each student).*
