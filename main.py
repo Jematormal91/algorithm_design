@@ -631,4 +631,93 @@ for i in range(years):
 format_total = "{:.2f}".format(total*12)  
 print("You will spend a total of $" + str(format_total) + " in " + str(years) + " years.")
    
+# # --> QUESTION 33 <--
+# # Write a function piglatinize that accepts a sentence as an argument, 
+# # uses that parameter value, and replaces words in the sentence that consist of at least 4 letters into their Pig Latin counterpart 
+# # and then displays the converted sentence. 
+# # In this version, to convert a word to Pig Latin, you remove the first letter and place that letter at the end of the word. 
+# # Then, you append the string "ay" to the word. For example:
 
+# # piglatinize('I want a doggy')
+# # // >>> I antway a oggyday
+
+
+def piglatinize(sentence):
+
+    sentence = sentence.split()
+
+    final_sentence = []
+
+    for word in sentence:
+        
+        if len(word) >= 4:
+        
+            substring = word[1:]
+                
+            new_word = substring + word[0] + "ay"
+        
+            final_sentence.append(new_word)
+        
+        else:
+            final_sentence.append(word)
+        
+
+    return (" ".join(final_sentence))
+
+## sample of output
+
+print(piglatinize('I want a doggy'))
+
+
+# --> QUESTION 34 <--
+# Write a program that reads the contents of a text file. 
+# Feel free to create your own with at least three lines of words. 
+# The program should create a dictionary in which the key-value pairs are described as follows:
+
+# The keys are the individual words in the file.
+# The values are the line numbers in the file where the word (the key) is found.
+
+# For example, suppose the word "hello" is found in lines 1, 2, 3, and 4. 
+# The dictionary would contain an element in which the key was the string "hello" and the value was a list of the line numbers [1,2,3,4].
+
+# Once the dictionary is built, the program, in an infinite while loop, should prompt the user for a word. 
+# When the user enters the word, the program should display what line numbers the word can be found on. 
+# If the word is not found in the dictionary, the program should display: "{replace with user-inputted word} does not exist in the file".
+
+## sample program with own txt file
+output = open('sample.txt', 'w')
+output.write('Jeanelle is a student\n')
+output.write('The college is in California\n')
+output.write('Happy holidays to everyone and a happy new year\n')     
+output.close()
+
+new_file = open('sample.txt', 'r')
+
+my_dict = {}
+loop = 0
+
+for line in new_file:
+    loop += 1
+    line_num = loop
+    for word in line.split():
+        word = word.lower()
+
+        if word not in my_dict:
+            my_dict[word] = line_num
+        
+        elif word in my_dict and my_dict[word] == line_num:
+            break
+
+        else:
+            my_dict[word] = [my_dict[word],line_num]
+
+infinite_loop = True
+while (infinite_loop):
+    user_input = input ("Enter a word to find it's location: ")
+
+    if user_input.lower() in my_dict:
+        user_input = user_input.lower()
+        print("The word is found in line" , my_dict[user_input])
+    
+    else:
+        print(user_input + " does not exist in the file")
