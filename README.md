@@ -118,4 +118,24 @@ The program should receive input from a user that will enter the amount to depos
 Use a function, add, which takes an argument number from the user input and adds it to a global sum variable. 
 After the 5th deposit, print out the running total thus far.
 
+### QUESTION 21.
+Write a program that counts all the vowels in a string. 
+The program should allow a user to enter a string input and print out a number response.
 
+### QUESTION 22.
+Write a function that accepts two string arguments: str and substr. 
+The function should count the number of times the substr is in str and return that number.
+
+### QUESTION 23.
+Given this string: *"Hello, my name is Joe. I love long walks in the park and staring at stars at night."*
+
+Write a program that prints out the following:</br>
+
+1. The number of upper case letters in the string
+2. The number of lower case letters in the string
+3. The number of whitespace characters in the string
+
+### QUESTION 24.
+Write a program that asks the user to enter a series of single-digit numbers with nothing separating them. 
+The program should display the sum of all the single-digit numbers in the string. </br>
+*For example, if the user enters 1234, the method should return 10, which is the sum of 1, 2, 3, and 4.*
