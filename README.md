@@ -161,3 +161,35 @@ Write a program that turns this into an ASCII art table with the scores in their
 *You may design the table however you like.*</br>
 *The nested lists are the rows and the indexes of the nested lists are the columns.*</br>
 *In the end, you should have a table with 4 rows (first one being the student names) and 3 columns (one for each student).*
+
+### QUESTION 28.
+A grocery store has a reward system that gives customers redeemable points based on the amount spent on groceries. 
+The points are awarded as follows: </br>
+* If a customer spends <= $50, they are awarded 1 point for each dollar spent.
+* If a customer spends > $50 and < $150, they are awarded 2 points for each dollar spent
+* If a customer spends >= $150, they are awarded 3 points for each dollar spent.
+*You can assume all grocery items are priced to the dollar with tax included (no cents).*
+
+Write a program that asks a customer to enter the total dollar amount spent for the trip, then displays the number of points awarded.
+
+### QUESTION 29.
+Define an input that accepts an age (number), check if infant, child, teenager, or adult.
+
+### QUESTION 30.
+Write a while loop that lets a user enter a number less than 10. 
+If the number inputted exceeds 10, print an error and ask for the number again, in which a user may enter the same or a different number. 
+The number should be incremented by 5, and the result assigned to a variable named sum. 
+The loop should continue to iterate as long as the sum is less than 50. When sum exceeds 30, it should print *"Almost there..."* until it reaches or exceeds 50. Once it does, print out *"your final sum is {replace with final sum}". *
+
+*For example, if the sum is currently 45 and the user inputs 4, the program will not enter the loop again since the new sum will be 54 and should then print "your final sum is 45".*
+
+### QUESTION 31.
+The flowchart shows a program's steps to troubleshooting a lamp issue. 
+Write a program where the first prompt to the user is *"What is wrong?"*. 
+If the user enters *"Lamp doesn't work"*, then the program should proceed to ask the questions depicted in the diagram and print out the responses accordingly. 
+*If any other issue is inputted initially by the user, ignore and repeat the same initial question until the correct issue is presented by the user.*
+
+### QUESTION 32.
+*Unfortunately, your landlord has announced that they will be increasing rent annually by 2% starting next year.*</br>
+Write a program that takes a user's current monthly rent amount (integer) and the number of years (integer), starting the following year, the user plans to stay at the apartment, and calculates how much they will spent total in that duration of stay. </br>
+The program should print this amount back to the user.
