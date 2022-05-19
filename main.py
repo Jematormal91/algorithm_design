@@ -335,3 +335,93 @@ while sum >= 0:
 
         if count % 5 == 0:
             print("Running total thus far: $" + "{:.2f}".format(sum))
+    
+   ## --> QUESTION 21 <--
+
+# Write a program that counts all the vowels in a string. 
+# The program should allow a user to enter a string input and print out a number response.
+
+def count_vowels(string):
+    vowels = ""
+    string = string.lower()
+
+    for char in string:
+        if char in "aeiou":
+            vowels += char
+    
+    return len(vowels)
+
+user_input = input("Enter a sentence (string): ")
+
+numOfVowels = count_vowels(user_input)
+
+print(numOfVowels)
+
+
+## --> QUESTION 22 <--
+
+# Write a function that accepts two string arguments: str and substr. 
+# The function should count the number of times the substr is in str and return that number.
+
+def count(str, substr):
+    numOfSubstr = 0
+    while substr in str:
+        
+        if substr in str:
+            str = str.replace(substr, "", 1)
+            numOfSubstr += 1
+
+    return numOfSubstr
+
+## --> QUESTION 23 <--
+
+# Given this string: "Hello, my name is Joe. I love long walks in the park and staring at stars at night."
+
+# Write a program that prints out the following:
+
+# The number of upper case letters in the string
+# The number of lower case letters in the string
+# The number of whitespace characters in the string
+
+def upper_case(string):
+    numOfUpper = 0
+    for char in string:
+        if char.isupper():
+            numOfUpper += 1
+    return numOfUpper
+
+def lower_case(string):           
+    numOfLower = 0
+    for char in string:
+        if char.islower():
+            numOfLower += 1
+    return numOfLower
+
+def whitespace(string):
+    numOfWhitespace = len(string) - len(string.replace(" ",""))
+    return numOfWhitespace 
+        
+string = "Hello, my name is Joe. I love long walks in the park and staring at stars at night."
+result_upper = upper_case(string)
+result_lower = lower_case(string)
+result_whitespace = whitespace(string)
+
+print("number of upper case letters:" , result_upper , "\nnumber of lower case letters:" , result_lower, "\nnumber of whitespace:" , result_whitespace)
+
+
+## --> QUESTION 24 <--
+
+# Write a program that asks the user to enter a series of single-digit numbers with nothing separating them. 
+# The program should display the sum of all the single-digit numbers in the string. 
+# For example, if the user enters 1234, the method should return 10, which is the sum of 1, 2, 3, and 4.
+
+def sumOfNums(numbers):
+    sum = 0
+    for digit in numbers:
+        sum += int(digit)
+    return sum
+
+user_input = input("Enter a series of single-digit numbers with nothing seperating them: ")
+
+result = sumOfNums(user_input)
+print(result)
