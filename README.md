@@ -102,3 +102,20 @@ When a number in list_a is determined to not have a duplicate in list_b, print o
 *list_a = [0,1,2,3,4,5]*</br>
 *list_b = [1,3,5,7,9]*
 
+### QUESTION 17.
+Write a function named times_ten. The function should accept an argument and display the product of its argument multiplied by 10.
+
+### QUESTION 18.
+Write a program that asks a user to enter a distance in kilometers, then converts that distance to miles and prints it out. 
+The conversion formula is as follows:</br>
+*# Miles = Kilometers x 0.6214*
+
+### QUESTION 19.
+Write a function count_up that prints out a number up to and including the passed in parameter number.
+
+### QUESTION 20.
+The program should receive input from a user that will enter the amount to deposit into the piggybank. 
+Use a function, add, which takes an argument number from the user input and adds it to a global sum variable. 
+After the 5th deposit, print out the running total thus far.
+
+
