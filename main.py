@@ -279,3 +279,59 @@ list_b = [1,3,5,7,9]
 for i in range(len(list_a)):
     if list_a[i] not in list_b:
         print(list_a[i] , "is not in list_b")
+        
+## --> QUESTION 17 <--
+
+# Write a function named times_ten. The function should accept an argument and display the product of its argument multiplied by 10.
+
+def times_ten(num):
+    print(num * 10)
+
+
+## --> QUESTION 18 <--
+
+# Write a program that asks a user to enter a distance in kilometers, then converts that distance to miles and prints it out. The conversion formula is as follows:
+
+# Miles = Kilometers x 0.6214
+
+def distanceToMiles(km):
+    return km * 0.6214
+
+kilometers = float(input("Enter a distance in kilometers: "))
+miles = distanceToMiles(kilometers)
+print("The distance in miles is:", "{:.4f}".format(miles))
+    
+
+## --> QUESTION 19 <--
+
+# Write a function count_up that prints out a number up to and including the passed in parameter number.
+
+def count_up(num):
+    count = 0
+    if count <= num:
+        for i in range (0, num+1):
+            print(i)
+
+
+## --> QUESTION 20 <--
+
+# Write a program that keeps track of running piggybank deposits. 
+# The program should receive input from a user that will enter the amount to deposit into the piggybank. 
+# Use a function, add, which takes an argument number from the user input and adds it to a global sum variable. 
+# After the 5th deposit, print out the running total thus far.
+
+def add(num):
+    global sum
+    return sum + num
+
+sum = 0
+count = 0
+while sum >= 0:
+
+    if sum >= 0:
+        deposit_amount = float(input("Amount to deposit: "))
+        sum = add(deposit_amount)
+        count += 1
+
+        if count % 5 == 0:
+            print("Running total thus far: $" + "{:.2f}".format(sum))
