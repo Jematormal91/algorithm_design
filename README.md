@@ -139,3 +139,25 @@ Write a program that prints out the following:</br>
 Write a program that asks the user to enter a series of single-digit numbers with nothing separating them. 
 The program should display the sum of all the single-digit numbers in the string. </br>
 *For example, if the user enters 1234, the method should return 10, which is the sum of 1, 2, 3, and 4.*
+
+### QUESTION 25.
+Design a program that generates an 8-digit passcode consisting of random numbers. 
+The program should generate eight random numbers, each in the range of 0-9, and assign each number to a list. 
+Then write another loop that displays the contents of the list.
+
+### QUESTION 26.
+A positive integer greater than 1 is said to be prime if it has no divisors other than 1 and itself. 
+A positive integer greater than 1 is composite if it is not prime. 
+Write a program that asks the user to enter an integer greater than 1, then displays all of the prime numbers that are less than or equal to the number entered. 
+Once the user has entered a number, the program should populate a list with all of the integers from 2 up through the value entered.
+The program should then use a loop to step through the list. 
+The loop should pass each element to a function that displays the element whether it is a prime number.
+
+### QUESTION 27.
+Given the following list and nested lists:
+*scores = [['Jack', 'Josh', 'Joe'],[90, 88, 56],[67, 88, 87],[88, 99, 78]]*</br>
+
+Write a program that turns this into an ASCII art table with the scores in their correct places. 
+*You may design the table however you like.*
+*The nested lists are the rows and the indexes of the nested lists are the columns.*
+*In the end, you should have a table with 4 rows (first one being the student names) and 3 columns (one for each student).*
