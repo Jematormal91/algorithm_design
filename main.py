@@ -67,3 +67,40 @@ for i in range(0,len(estaturas)):
     elif estaturas[i] < media:
         personasMenorQueMedia += 1
 print("Hay",personasMayorQueMedia,"personas mas altas que la media.\n"+"Hay",personasMenorQueMedia,"personas mas bajas que la media.")
+
+## --> PROBLEMA #6 <--
+
+# Realizar un programa en donde, cuando el usuario entre un numero entre 1 y 7 el programa
+# arroje un mensaje que indique s que dia corresponde ese numero ingresado, ademas, 
+# si el usuario entra un numero que no esta entre 1 y 7 el programa debe pedir que 
+# se entre otro numero entre eses rango y al entrar el numero 9 el programa se cierre.
+
+opcionusuario = 0
+
+while (opcionusuario != 9):
+    
+    opcionusuario = int(input("Escribe un numero para saber a que dia de la semana corresponde (Si desea cerrar el programa persione 9): "))
+
+    if opcionusuario == 1:
+        print("Lunes\n")
+    
+    elif opcionusuario == 2:
+        print("Martes\n")
+
+    elif opcionusuario == 3:
+        print("Miercoles\n")
+    
+    elif opcionusuario == 4:
+        print("Jueves\n")
+
+    elif opcionusuario == 5:
+        print("Viernes\n")
+
+    elif opcionusuario == 6:
+        print("Sabado\n")
+
+    elif opcionusuario == 7:
+        print("Domingo\n")
+    
+    elif opcionusuario != 9:
+        print("\nEntra un numero entre 1 y 7.")
