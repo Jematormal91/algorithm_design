@@ -13,3 +13,6 @@ Display (print) the list of numbers from 1 to 100 whose value ends in 6. 4. Calc
 Calculate the mean height of the following people:
 
 ##### <img width="200" alt="Screen Shot 2022-05-19 at 10 59 11 AM" src="https://user-images.githubusercontent.com/87743069/169327558-4f965c0b-5600-4d11-b4ef-cfabaf9f34bd.png">
+
+### QUESTION 5.
+Make a program where, when the user enters a number between 1 and 7, the program throws a message that indicates to which day that entered number corresponds, in addition, if the user enters a number that is not between 1 and 7, the program must ask enter another number between that range and when entering the number 9 the program closes.
