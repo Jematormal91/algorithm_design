@@ -67,3 +67,38 @@ The loop should iterate 10 times and keep a running total of the numbers entered
 Write a program that prints numbers starting at 20 and ending at 0. 
 For every odd number, print "Buzz" instead of the number, and for every even number, print "Fizz" instead of the number.
 
+### QUESTION 13.
+Write a program with a loop that asks the user to enter a series of positive numbers. 
+The user should enter a negative number to signal the end of the series. 
+After all the positive numbers have been entered, the program should display the sum.
+
+### QUESTION 14.
+At one college, the tuition for a full-time student is $8,000 per semester. 
+It has been announced that the tuition will increase by 3 percent each year for the next 5 years. 
+Write a program with a loop that displays the projected semester tuition for the next 5 years.
+
+### QUESTION 15.
+Write a program that uses a nested loops to draw this pattern:
+
+### *******
+
+### ******
+
+### *****
+
+### ****
+
+### ***
+
+### **
+
+### *
+
+### QUESTION 16.
+Write a program that prints out all numbers from list_a: [0,1,2,3,4,5] that do not have a corresponding number in another list_b: [1,3,5,7,9]. 
+When a number in list_a is determined to not have a duplicate in list_b, print out "{num} is not in list_b".
+
+*For example: "0 is not in list_b"*</br>
+*list_a = [0,1,2,3,4,5]*</br>
+*list_b = [1,3,5,7,9]*
+
