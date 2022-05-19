@@ -425,3 +425,84 @@ user_input = input("Enter a series of single-digit numbers with nothing seperati
 
 result = sumOfNums(user_input)
 print(result)
+
+
+## --> QUESTION 25 <--
+
+# Design a program that generates an 8-digit passcode consisting of random numbers. 
+# The program should generate eight random numbers, each in the range of 0-9, and assign each number to a list. 
+# Note: random numbers were discussed in Chapter 5. 
+# Then write another loop that displays the contents of the list.
+import random
+def passcode():
+    passcode = []
+    while len(passcode) <= 8:
+        digits = random.randrange(10)
+        passcode.append(digits)
+    return passcode
+
+loop = True
+while (loop):
+    user_input = input("Do you want to generate a passcode? (y/n): ")
+    if user_input == "y":
+        print(passcode())
+    elif user_input == "n":
+        loop = False
+        break
+
+
+# --> QUESTION 26 <--
+
+# A positive integer greater than 1 is said to be prime if it has no divisors other than 1 and itself. 
+# A positive integer greater than 1 is composite if it is not prime. 
+# Write a program that asks the user to enter an integer greater than 1, 
+# then displays all of the prime numbers that are less than or equal to the number entered. 
+
+# The program should meet the following criteria:
+def isPrime(number):
+    if number == 2 or number == 3:
+        return "is prime"
+    elif number % 3 != 0 and number % 2 != 0:
+        return "is prime"
+    else:
+        return "not prime"
+
+# Once the user has entered a number, the program should populate a list with all of the integers from 2 up through the value entered.
+user_input = int(input("Enter an integer greater than 1: "))
+list = []
+for i in range(2,user_input+1):
+        list.append(i) 
+
+# The program should then use a loop to step through the list. 
+loop = True
+while (loop):
+
+# The loop should pass each element to a function that displays the element whether it is a prime number
+    for number in list:
+        print(number,isPrime(number))
+    
+        if number == user_input:
+            loop = False
+            break
+
+
+## --> QUESTION 27 <--
+
+# Given the following list and nested lists:
+
+scores = [['Jack', 'Josh', 'Joe'],[90, 88, 56],[67, 88, 87],[88, 99, 78]]
+
+# Write a program that turns this into an ASCII art table with the scores in their correct places. 
+# You may design the table however you like. 
+# The nested lists are the rows and the indexes of the nested lists are the columns. 
+# In the end, you should have a table with 4 rows (first one being the student names) and 3 columns (one for each student).
+
+row_names = scores[0][0] + " | " + scores[0][1] + " | " + scores[0][2]
+print ("-" * len(row_names))
+print(row_names)
+for i in range (1,4):
+    print ("-" * len(row_names))
+    print(" " + str(scores[i][0]) + " " + " | " + " " + str(scores[i][1]) + " " + " | " + str(scores[i][2]))
+print ("-" * len(row_names))
+   
+
