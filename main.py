@@ -104,3 +104,19 @@ while (opcionusuario != 9):
     
     elif opcionusuario != 9:
         print("\nEntra un numero entre 1 y 7.")
+ 
+# ---> QUESTION 6 <---
+
+food_charge = input("Enter the charge for the food: ")
+
+food_charge = float(food_charge)
+
+# 20% tip
+tip = 0.20 * food_charge
+
+# 8% sales tax
+sales_tax = 0.08 * food_charge
+
+total_owed = food_charge + tip + sales_tax
+
+print("The tip owed is $"+str(format(tip,",.2f"))+".\n"+"The sales tax owed is $"+str(format(sales_tax,",.2f"))+".\n"+"The total amount owed is $"+str(format(total_owed,",.2f"))+".")
